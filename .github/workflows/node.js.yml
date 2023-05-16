@@ -1,0 +1,29 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm' # Change the cache from 'npm' to 'pnpm'
+    - run: pnpm install -g pnpm@6 # Install pnpm globally
+    - run: pnpm i # Run pnpm install command
+    - run: pnpm run build --if-present # Run pnpm build command
+    - run: pnpm dev # Run pnpm dev command
+    - run: pnpm test # Run pnpm test command
