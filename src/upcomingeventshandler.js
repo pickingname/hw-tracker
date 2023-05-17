@@ -1,25 +1,11 @@
 // Import the events from the eventshandler.js module
 import { events } from './eventshandler.js';
 
-
-function isEventDay(eventDate) {
-  const today = new Date();
-  return (
-    today.getFullYear() === eventDate.getFullYear() &&
-    today.getMonth() === eventDate.getMonth() &&
-    today.getDate() === eventDate.getDate()
-  );
-}
-
-
 const futureEventsDiv = document.getElementById("futureevents");
 
-
-const futureEvents = events.filter(event => event.date > new Date());
-
+const futureEvents = events.filter(event => event.date >= new Date());
 
 futureEvents.sort((a, b) => a.date - b.date);
-
 
 if (futureEvents.length > 0) {
   const numberOfEventsToShow = 3;
