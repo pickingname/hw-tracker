@@ -1,6 +1,6 @@
 # homework tracker
 
----
+# github pages does not work! refer to [here!](https://hw-tracker.repsys.repl.co/)
 
 ### developing
 
