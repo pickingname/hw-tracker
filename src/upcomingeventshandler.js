@@ -1,9 +1,13 @@
-// Import the events from the eventshandler.js module
 import { events } from './eventshandler.js';
 
 const futureEventsDiv = document.getElementById("futureevents");
 
 const futureEvents = events.filter(event => event.date > new Date());
+
+console.log("Current Date:", new Date());
+
+console.log("Future Events:", futureEvents);
+
 futureEvents.sort((a, b) => a.date - b.date);
 
 if (futureEvents.length > 0) {
