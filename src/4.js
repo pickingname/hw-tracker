@@ -1,5 +1,5 @@
 // Set the target date for the countdown (YYYY-MM-DD format)
-const targetDate = '2023-05-18';
+const targetDate = '2023-05-19';
 
 const countdownElement = document.getElementById('cdw-4');
 

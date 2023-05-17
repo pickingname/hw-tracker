@@ -6,7 +6,7 @@ export const events = [
   },
   {
     name: "Homework 4 due",
-    date: new Date("2023-05-18")
+    date: new Date("2023-05-19")
   },
   {
     name: "Homework 3 due",
