@@ -75,12 +75,16 @@
   <hr class="px-5 border-gray-700">
 </div>
         </div>
-        <div class="pt-3 px-3 pb-10"> <!-- ongoing event container -->
+        <div class="pt-3 px-3 pb-5"> <!-- ongoing event container -->
           <p class="text-3xl">ongoing events <span id="today" class="text-gray-500 text-xl"></span><span id="eventcount"></span></p>
           <span class="pt-3 flex items-center text-sm font-medium text-gray-900 dark:text-white"><span class="flex w-2.5 h-2.5 bg-green-600 rounded-full mr-1.5 flex-shrink-0"></span><span id="events" class="text-white"></span></span>
         </div>
+        <div class="px-3 pb-10"> <!-- ongoing event container -->
+          <p class="text-3xl">Upcoming events</p>
+          <span class="pt-3 flex items-center text-sm font-medium text-gray-900 dark:text-white"><span class="flex w-2.5 h-2.5 bg-green-600 rounded-full mr-1.5 flex-shrink-0"></span><span id="futureevents" class="text-white"></span></span>
+        </div>
     </main>
-    <br>
+    <script type="module" src="/src/upcomingeventshandler.js"></script>
     <script type="module" src="/src/eventshandler.js"></script>
     <script type="module" src="/src/today.js"></script>
     <script type="module" src="/src/main.js"></script>
