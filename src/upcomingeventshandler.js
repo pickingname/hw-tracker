@@ -3,8 +3,7 @@ import { events } from './eventshandler.js';
 
 const futureEventsDiv = document.getElementById("futureevents");
 
-const futureEvents = events.filter(event => event.date >= new Date());
-
+const futureEvents = events.filter(event => event.date > new Date());
 futureEvents.sort((a, b) => a.date - b.date);
 
 if (futureEvents.length > 0) {
