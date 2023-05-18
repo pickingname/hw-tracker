@@ -11,9 +11,6 @@ const futureEvents = events.filter(event => {
   return eventDate > currentDate;
 });
 
-console.log("Current Date:", currentDate);
-console.log("Future Events:", futureEvents);
-
 futureEvents.sort((a, b) => a.date - b.date);
 
 if (futureEvents.length > 0) {
