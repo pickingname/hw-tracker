@@ -3,8 +3,13 @@ import { events } from './eventshandler.js';
 const futureEventsDiv = document.getElementById("futureevents");
 
 const currentDate = new Date();
+currentDate.setHours(0, 0, 0, 0); // Set the time portion to 00:00:00
 
-const futureEvents = events.filter(event => event.date > currentDate);
+const futureEvents = events.filter(event => {
+  const eventDate = new Date(event.date);
+  eventDate.setHours(0, 0, 0, 0); // Set the time portion to 00:00:00
+  return eventDate > currentDate;
+});
 
 console.log("Current Date:", currentDate);
 console.log("Future Events:", futureEvents);
