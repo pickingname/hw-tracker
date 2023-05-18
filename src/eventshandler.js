@@ -23,6 +23,10 @@ export const events = [
   {
     name: "Homework 5 due",
     date: new Date("2023-05-23")
+  },
+  {
+    name: "Homework 6 due",
+    date: new Date("2023-05-22")
   }
 ];
 
