@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        // add more fonts ...name: [...source-of-font]
       },
       container: {
         center: true,
