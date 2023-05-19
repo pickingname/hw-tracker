@@ -1,5 +1,3 @@
-// Client-side code
-
 // Check if the URL is invalid and redirect to the 404 page
 function handleInvalidURL() {
   const validURLs = ['/','/1.0.0.html','/404.html']; // Replace with your valid URLs
