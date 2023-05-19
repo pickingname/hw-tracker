@@ -2,41 +2,44 @@
 export const events = [
   {
     name: "Holiday",
-    date: new Date("2023-05-17")
+    date: new Date("2023-05-17T00:00:00Z")
   },
   {
     name: "Homework 4 due",
-    date: new Date("2023-05-19")
+    date: new Date("2023-05-19T00:00:00Z")
   },
   {
     name: "Homework 3 due",
-    date: new Date("2023-05-16")
+    date: new Date("2023-05-16T00:00:00Z")
   },
   {
     name: "Homework 2 due",
-    date: new Date("2023-05-23")
+    date: new Date("2023-05-23T00:00:00Z")
   },
   {
     name: "Homework 1 due",
-    date: new Date("2023-05-18")
+    date: new Date("2023-05-18T00:00:00Z")
   },
   {
     name: "Homework 5 due",
-    date: new Date("2023-05-23")
+    date: new Date("2023-05-23T00:00:00Z")
   },
   {
     name: "Homework 6 due",
-    date: new Date("2023-05-22")
+    date: new Date("2023-05-22T00:00:00Z")
+  },
+  {
+    name: "Robotics event",
+    date: new Date("2023-05-20T00:00:00Z")
   }
 ];
-
 
 function isEventDay(eventDate) {
   const today = new Date();
   return (
-    today.getFullYear() === eventDate.getFullYear() &&
-    today.getMonth() === eventDate.getMonth() &&
-    today.getDate() === eventDate.getDate()
+    today.getUTCFullYear() === eventDate.getUTCFullYear() &&
+    today.getUTCMonth() === eventDate.getUTCMonth() &&
+    today.getUTCDate() === eventDate.getUTCDate()
   );
 }
 
