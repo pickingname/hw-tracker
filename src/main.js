@@ -1,3 +1,31 @@
 console.time('countdown.js loaded Σ');
-function countdown(){var $=new Date;$.setDate($.getDate()+(7-$.getDay())%7+1),$.setHours(0,0,0,0),$=$.getTime();var e=setInterval(function(){var t=new Date().getTime(),n=$-t;document.getElementById("countdown").textContent=Math.floor(n/864e5)+"d "+Math.floor(n%864e5/36e5)+"h "+Math.floor(n%36e5/6e4)+"m "+Math.floor(n%6e4/1e3)+"s ",new Date().getDay()>=0&&(($=new Date).setDate($.getDate()+(7-$.getDay())%7+1),$.setHours(0,0,0,0),$=$.getTime()),n<0&&(clearInterval(e),document.getElementById("countdown").textContent="0d 0h 0m 0s | Ended")},1e3)}countdown();
+
+function cdr() {
+    // Get the current date
+    var currentDate = new Date();
+    
+    // Set the target date to May 28, 2023
+    var targetDate = new Date("May 28, 2023 00:00:00");
+    
+    // Calculate the remaining time
+    var remainingTime = targetDate.getTime() - currentDate.getTime();
+    var remainingSeconds = Math.floor(remainingTime / 1000);
+    var remainingMinutes = Math.floor(remainingSeconds / 60);
+    var remainingHours = Math.floor(remainingMinutes / 60);
+    var remainingDays = Math.floor(remainingHours / 24);
+    
+    // Format the remaining time
+    var formattedTime = remainingDays + "d " + (remainingHours % 24) + "h " + (remainingMinutes % 60) + "m " + (remainingSeconds % 60) + "s";
+    
+    // Append the countdown to the specified element
+    var countdownElement = document.getElementById("nextrefresh");
+    countdownElement.innerHTML = formattedTime;
+    
+    // Update the countdown every second
+    setTimeout(cdr, 1000);
+  }
+  
+  // Start the countdown when the page is loaded
+  window.onload = cdr;
+
 console.timeEnd('countdown.js loaded Σ');
