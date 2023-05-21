@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/logo-with-shadow.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js things -->
     <title>homework-tracker 1.2.0 prod</title>
   </head>
   <body class="antialiased">
@@ -39,7 +40,7 @@
           </span>
           <span class="flex pt-2 items-center text-sm font-medium text-gray-900 dark:text-white"><span
               class="flex w-2.5 h-2.5 bg-blue-500 rounded-full mr-1.5 flex-shrink-0"></span><span
-              style="color: white;">Issued on Wed 19</span></span>
+              style="color: white;">Issued on Fri 19</span></span>
           <span class="flex pt-2 items-center text-sm font-medium text-gray-900 dark:text-white"><span
               class="flex w-2.5 h-2.5 bg-blue-600 rounded-full mr-1.5 flex-shrink-0"></span><span
               style="color: white;">Due on Mon 22</span></span>
@@ -59,7 +60,7 @@
           <p class="text-gray-300">english - G</p>
           <span class="flex pt-2 items-center text-sm font-medium text-gray-900 dark:text-white"><span
               class="flex w-2.5 h-2.5 bg-blue-500 rounded-full mr-1.5 flex-shrink-0"></span><span
-              style="color: white;">Issued on Tue 18</span></span>
+              style="color: white;">Issued on Thu 18</span></span>
           <span class="flex pt-2 items-center text-sm font-medium text-gray-900 dark:text-white"><span
               class="flex w-2.5 h-2.5 bg-blue-600 rounded-full mr-1.5 flex-shrink-0"></span><span
               style="color: white;">Due on Tue 23</span></span>
@@ -173,6 +174,9 @@
             class="flex w-2.5 h-2.5 bg-green-600 rounded-full mr-1.5 flex-shrink-0"></span><span id="futureevents"
             class="text-white"></span></span>
       </div>
+      <div class="chart-container px-20"> <!-- style="position: relative; height:40vh; width:80vw" --> <!-- chart starts here -->
+        <canvas id="hwchart"></canvas>
+    </div><br>
       <div class="px-10 pb-5">
         <hr class="px-5 border-gray-700">
         <p class="text-gray-600 text-center pt-5 mousehelp">&copy; <code>0x7F</code>, 2023 all rights reserved</p>
@@ -189,6 +193,7 @@
     <script type="module" src="/src/5.js"></script>
     <script type="module" src="/src/6.js"></script>
     <script type="module" src="/src/404.js"></script>
+    <script type="module" src="/src/hw-chart.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
