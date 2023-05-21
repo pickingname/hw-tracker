@@ -17,8 +17,8 @@ const configLineChart = {
   type: "line",
   data: data,
   options: {
-    maintainAspectRatio: false,
-    responsive: true,
+    responsive: true, // Allow chart to be responsive
+    maintainAspectRatio: true, // Allow aspect ratio to adjust
     legend: {
       display: true,
       labels: {
