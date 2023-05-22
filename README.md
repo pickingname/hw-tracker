@@ -1,7 +1,5 @@
 # homework tracker
 
-# github pages does not work! to see the working page, go to [this website!](https://hw-tracker.repsys.repl.co/)
-
 ### developing
 
 git clone this repo
