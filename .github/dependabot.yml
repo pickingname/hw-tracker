@@ -1,1 +1,11 @@
-
+version: 2
+updates:
+  - package-ecosystem: "pnpm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+    package_updates:
+      - dependency-name: "postcss"
+      - dependency-name: "autoprefixer"
