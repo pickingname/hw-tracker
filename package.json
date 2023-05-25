@@ -22,6 +22,7 @@
     "vite": "^3.2.4"
   },
   "dependencies": {
+    "dompurify": "^3.0.3",
     "flowbite": "^1.6.5",
     "pnpm": "^8.5.1"
   }
