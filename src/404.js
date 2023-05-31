@@ -1,6 +1,6 @@
 // Check if the URL is invalid and redirect to the 404 page
 function handleInvalidURL() {
-  const validURLs = ['/','/1.0.0.html','/404.html','/backups/week1','/contact.html']; // Replace with your valid URLs
+  const validURLs = ['/','/1.0.0.html','/404.html','/backups/week1','/contact.html','/%no.html']; // Replace with your valid URLs
 
   const currentURL = window.location.pathname;
 
