@@ -4,7 +4,7 @@
 [![CodeQL](https://github.com/pickingname/hw-tracker/actions/workflows/codeql.yml/badge.svg)](https://github.com/pickingname/hw-tracker/actions/workflows/codeql.yml)
 
 ### developing
-To run the project locally, first install pnpm first if you dont have
+To run the project locally, first install pnpm first if you dont have npm
 
 ```bash
 npm i pnpm
