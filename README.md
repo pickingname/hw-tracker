@@ -4,19 +4,23 @@
 [![CodeQL](https://github.com/pickingname/hw-tracker/actions/workflows/codeql.yml/badge.svg)](https://github.com/pickingname/hw-tracker/actions/workflows/codeql.yml)
 
 ### developing
+To run the project locally, first install pnpm first if you dont have
 
-git clone this repo
-
-then run
-
-```
-pnpm i && pnpm dev
+```bash
+npm i pnpm
 ```
 
-install pnpm if you dont have pnpm
 
+Then install the dependencies:
+
+```bash
+pnpm i
 ```
-npm install pnpm
+
+Next, run the development server:
+
+```bash
+pnpm dev
 ```
 
 if you dont have npm, download it [here](https://nodejs.org)
