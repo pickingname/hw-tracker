@@ -25,6 +25,6 @@ pnpm dev
 
 if you dont have npm, download it [here](https://nodejs.org)
 
-after you runned `pnpm i` you should have node_modules folder, after that you do not need to run the `pnpm i` just run `pnpm dev`
+> after you runned `pnpm i` you should have node_modules folder, after that you do not need to run the `pnpm i` just run `pnpm dev`
 
 ---
